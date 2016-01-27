@@ -42,9 +42,8 @@ sudo cp cudnn-6.5-linux-x64-v2/cudnn.h /usr/local/cuda/include/
 echo >> .bashrc
 echo "export CUDA_HOME=/usr/local/cuda" >> .bashrc
 echo "export CUDA_ROOT=/usr/local/cuda" >> .bashrc
-echo "export PATH=$PATH:$CUDA_ROOT/bin" >> .bashrc
-echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_ROOT/lib64" >> .bashrc
-echo "export PATH=$PATH:$HOME/bin" >> .bashrc
+echo "export PATH=$PATH:/usr/local/cuda/bin:$HOME/bin" >> .bashrc
+echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64" >> .bashrc
 
 # Install Java for Bazel
 sudo add-apt-repository -y ppa:webupd8team/java
