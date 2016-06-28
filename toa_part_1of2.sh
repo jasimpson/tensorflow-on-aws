@@ -55,10 +55,10 @@ sudo apt-get install -y oracle-java8-installer
 
 # Install Bazel
 sudo apt-get install pkg-config zip g++ zlib1g-dev unzip
-wget https://github.com/bazelbuild/bazel/releases/download/0.1.4/bazel-0.1.4-installer-linux-x86_64.sh
-chmod +x bazel-0.1.4-installer-linux-x86_64.sh
-./bazel-0.1.4-installer-linux-x86_64.sh --user
-rm bazel-0.1.4-installer-linux-x86_64.sh
+wget https://github.com/bazelbuild/bazel/releases/download/0.2.3/bazel-0.2.3-installer-linux-x86_64.sh
+chmod +x bazel-0.2.3-installer-linux-x86_64.sh
+./bazel-0.2.3-installer-linux-x86_64.sh --user
+rm bazel-0.2.3-installer-linux-x86_64.sh
 
 # Clone tensorflow repo
 git clone --recurse-submodules https://github.com/tensorflow/tensorflow
