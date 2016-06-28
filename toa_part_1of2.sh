@@ -33,8 +33,7 @@ sudo apt-get install -y cuda
 
 # Install cuDNN
 wget $CUDNN_URL
-tar -xf cudnn-6.5-linux-x64-v2.tar
-rm cudnn-6.5-linux-x64-v2.tar
+tar -zxf cudnn-6.5-linux-x64-v2.tgz && rm cudnn-6.5-linux-x64-v2.tgz
 sudo cp -R cudnn-6.5-linux-x64-v2/lib* /usr/local/cuda/lib64/
 sudo cp cudnn-6.5-linux-x64-v2/cudnn.h /usr/local/cuda/include/
 
