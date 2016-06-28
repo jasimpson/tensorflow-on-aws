@@ -7,7 +7,7 @@ echo "Running installer part 1 of 2"
 # This script requires an Nvidia Accelerated Computing Developer Program account
 # Register for an account at: https://developer.nvidia.com
 # Once accepted (typically takes about a day), download cuDNN from:
-# https://developer.nvidia.com/rdp/assets/cudnn-65-linux-v2-asset
+# https://developer.nvidia.com/rdp/assets/cudnn-70-linux-x64-v40
 # Host this file on a private location and point to it using CUDNN_URL
 CUDNN_URL=
 
@@ -33,9 +33,9 @@ sudo apt-get install -y cuda
 
 # Install cuDNN
 wget $CUDNN_URL
-tar -zxf cudnn-6.5-linux-x64-v2.tgz && rm cudnn-6.5-linux-x64-v2.tgz
-sudo cp -R cudnn-6.5-linux-x64-v2/lib* /usr/local/cuda/lib64/
-sudo cp cudnn-6.5-linux-x64-v2/cudnn.h /usr/local/cuda/include/
+tar -zxf cudnn-7.0-linux-x64-v4.0-prod.tgz && rm cudnn-7.0-linux-x64-v4.0-prod.tgz
+sudo cp cuda/lib64/* /usr/local/cuda/lib64/
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
 
 # Add environmental variables
 echo >> .bashrc

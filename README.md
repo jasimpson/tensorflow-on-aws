@@ -13,11 +13,11 @@ This script is for the following specific versions:
 
 | Name       | Version |
 |------------|---------|
-| TensorFlow | 0.6.0   |
+| TensorFlow | 0.9.0   |
 | CUDA       | 7.0     |
-| cuDNN      | 6.5     |
+| cuDNN      | 7.0     |
 | Java       | 8       |
-| Bazel      | 0.1.4   |
+| Bazel      | 0.2.3   |
 | Python     | 2.7.6   |
 
 ## Usage
